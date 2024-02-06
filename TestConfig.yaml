@@ -1,12 +1,13 @@
 kind: source
 spec:
-  name: "comics"
+  name: "lseg"
   registry: "grpc"
   path: "localhost:7777"
   tables: ['*']
   destinations: ["sqlite"]
   spec:
-    base_url: https://xkcd.com
+    username: "**CHANGE_ME**"
+    password: "**CHANGE_ME**"
 ---
 kind: destination
 spec:
