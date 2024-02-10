@@ -7,10 +7,10 @@ To get started all you need to do is change a few names, define some tables, and
 
 ## Key files & classes
 
-- [plugin/tables/items.py](plugin/tables/items.py)
+- [plugin/tables/items.py](plugin/tables/xlon_post_delayed.py)
   - `Items` - A boilerplate table definition
   - `ItemResolver` - A boilerplate table resolver
-- [plugin/example/client.py](plugin/example/client.py)
+- [plugin/example/client.py](plugin/lseg/client.py)
   - `ExampleClient` - A boilerplate API Client
 - [plugin/client/client.py]
   - `Spec` - Defines the CloudQuery Config
@@ -32,7 +32,7 @@ If you had an API endpoint https://api.example.com/items/{num} and for each valu
 {
    "num": {{num}},
    "date": "2023-10-12",
-   "title": "A simple example"
+   "title": "A simple lseg"
 }
 ```
 
