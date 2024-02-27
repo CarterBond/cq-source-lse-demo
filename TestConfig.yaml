@@ -6,13 +6,13 @@ spec:
   tables: ['*']
   destinations: ["sqlite"]
   spec:
-    username: "**CHANGE_ME**"
-    password: "**CHANGE_ME**"
+    username: "**changeme**"
+    password: "**changeme**"
 ---
 kind: destination
 spec:
   name: sqlite
   path: cloudquery/sqlite
-  version: "v2.4.11"
+  version: "v2.7.1"
   spec:
     connection_string: ./db.sqlite

@@ -3,7 +3,7 @@ from cloudquery.sdk.scheduler import Client as ClientABC
 
 from plugin.lseg.client import LSEGClient
 
-DEFAULT_CONCURRENCY = 1
+DEFAULT_CONCURRENCY = 10
 DEFAULT_QUEUE_SIZE = 10000
 DEFAULT_RETRY_LIMIT = 3
 

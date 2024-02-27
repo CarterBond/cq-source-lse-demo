@@ -1,3 +1,4 @@
+
 import json
 from typing import List, Generator
 
@@ -14,7 +15,6 @@ PLUGIN_NAME = "lseg"
 PLUGIN_VERSION = "0.0.1"
 TEAM_NAME = "cloudquery"
 PLUGIN_KIND = "source"
-
 
 class ExamplePlugin(plugin.Plugin):
     def __init__(self) -> None:
@@ -45,7 +45,14 @@ class ExamplePlugin(plugin.Plugin):
 
     def get_tables(self, options: plugin.TableOptions) -> List[plugin.Table]:
         all_tables: List[plugin.Table] = [
+            tables.ECEUPostTrade(),
+            tables.ECHOPostTrade(),
+            tables.TQEXPostTrade(),
+            tables.TQEXPreTrade(),
+            tables.TRQXPostTrade(),
+            tables.TRQXPreTrade(),
             tables.XLONPostDelayed(),
+            tables.XLONPreTrade(),
         ]
 
         # set parent table relationships

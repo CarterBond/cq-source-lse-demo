@@ -41,7 +41,7 @@ class XLONPostDelayedResolver(TableResolver):
     def resolve(
         self, client: Client, parent_resource: Resource
     ) -> Generator[Any, None, None]:
-        for item_response in client.client.xlon_iterator():
+        for item_response in client.client.item_iterator("LSE-Post-Trade"):
             cleaned_row = {
                 "distribution_timestamp": datetime.fromisoformat(item_response.get("distributionTime")),
                 "trading_timestamp": datetime.fromisoformat(item_response.get("tradingDateAndTime")),
